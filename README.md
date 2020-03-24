@@ -1,3 +1,3 @@
-# react-z4fqgd
+# react-todo-list
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-z4fqgd)
+To do list built with React using StackBlitz.
