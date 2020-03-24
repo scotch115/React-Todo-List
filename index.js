@@ -24,6 +24,14 @@ class App extends React.Component {
       items: [...this.state.items, this.state.term]
     });
   }
+
+  clearStorage = (event) => {
+    localStorage.clear()
+    const list = document.getElementsByClassName('row');
+    while (list.firstChild) {
+      list.removeChild(firstChild);
+    }
+  }
   render (){
     return (
       <div className="container" style={{padding: 10, height: '100vh', backgroundColor: '#303a52'}}>
@@ -33,6 +41,7 @@ class App extends React.Component {
         </form>
         <List items={this.state.items} />
         <hr style={{backgroundColor: '#fc85ae'}}/>
+        <button className="button is-small is-primary" onClick={this.clearStorage}>Clear All</button>
       </div>
     );
   }

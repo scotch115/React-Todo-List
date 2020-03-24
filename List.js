@@ -1,7 +1,7 @@
 import React from 'react';
 
 const List = ({items}) => (
-  <div className="container">
+  <div className="container" >
     {
      items && items.map((item, index) => 
      <div className="row has-text-centered" style={{flex: 1, justify: 'center', color: 'white'}}>
