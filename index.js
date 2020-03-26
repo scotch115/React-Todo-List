@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import List from './List';
-import './style.css';
 
 
 class App extends React.Component {
