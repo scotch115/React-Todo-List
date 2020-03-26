@@ -33,7 +33,7 @@ class App extends React.Component {
   }
   render (){
     return (
-      <div className="container" style={{padding: 10, height: '100vh', backgroundColor: '#303a52'}}>
+      <div className="container" style={{padding: 10, height: '100vh', width: '100vw', backgroundColor: '#303a52'}}>
         <div className="title has-text-centered" style={{color: 'white'}}>To Do List</div>
         <form className="has-text-centered" onSubmit={this.onSubmit}>
           <input value={this.state.term} onChange={this.onChange}/>
